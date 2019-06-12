@@ -12,7 +12,15 @@
 
 <body>
     {% include navigation.html %}
-    {{ content }}
+
+    <div class="columns is-2">
+        <div class="column is-one-quarter">
+            {% include sidenav.html %}
+        </div>
+        <div class="column">
+            {{ content }}
+        </div>
+    </div>
 </body>
 
 </html>
